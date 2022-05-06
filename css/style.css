@@ -1,0 +1,749 @@
+/* ここから下に記載していく */
+@charset "utf-8";
+
+/* 基本的なタグ */
+h1 {
+    font-size: 36px;
+    text-align: center;
+    background-size: cover;
+    font-weight: bold;
+}
+
+h2 {
+    font-size: 24px;
+    margin-top: 60px;
+    margin-bottom: 30px;
+    text-align: center;
+    color: #885988;
+}
+
+h3 {
+    font-size: 18px;
+    color: #3C474E;
+    text-align: center;
+    margin-bottom: 60px;
+    color: #574B90;
+}
+
+p {
+    font-size: 16px;
+    color: #3C474E;
+    text-align: center;
+    margin: 20px;
+    line-height: 1.6em;
+    overflow-wrap: break-word;
+}
+
+input {
+    display: inline-block;
+    margin: 8px;
+}
+
+textarea {
+    margin: 8px;
+}
+
+/* label {
+    display: inline-block;
+    margin-left: 4px;
+} */
+
+select {
+    margin: 8px;
+}
+
+button {
+    border: 1px solid transparent;
+}
+
+caption {
+    color: #574B90;
+}
+
+th {
+    text-align: left;
+}
+
+.container {
+    width: 1200px;
+    margin: 0 auto;
+}
+
+/* Start画面部分 */
+
+#start {
+	background: #885988;
+	position: fixed;
+	top: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	z-index: 9000;
+}
+
+#start img {
+	position: fixed;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	display: none;
+	z-index: 9999;
+	width: 20%;
+    object-fit: cover;
+}
+
+/* Header部分 */
+header {
+    height: 120px;
+    width: 100%;
+    position: fixed;
+    margin: 0 auto;
+    display: block;
+    z-index: 10;
+}
+
+header .container {
+    height: 80%;
+}
+
+.header__items {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    background-color: #885988;
+}
+
+.header__logo {
+    height: 100%;
+    width: 40%;
+}
+
+.header__logo img {
+    height: 100%;
+}
+
+.header__left {
+    width: 50%;
+}
+
+.header__content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 24px;
+    padding-right: 8px;
+}
+
+.header__content li {
+    font-size: 24px;
+}
+
+.header__content li a {
+    text-decoration: none;
+    color: white;
+}
+
+.hero__image {
+    background-image: url(../img/bitcoin-hero-image.jpg);
+    height: 500px;
+    background-size: cover;
+}
+
+.hero__heading {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    color: white;
+}
+
+.hero__subheading {
+    font-size: 0.8em;
+    margin: 0.4em;
+}
+
+/* ABOUT部分 */
+
+.bitcoin__table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* margin: 12px; */
+}
+
+.bitcoin__table table {
+    width: 60%;
+    border: 2px solid #574B90;
+    margin-bottom: 8px;
+}
+
+.bitcoin__table table caption {
+    margin: 12px;
+}
+
+.bitcoin__table table thead tr {
+    border: 1px solid #574B90;
+}
+
+.bitcoin__table table thead tr th {
+    width: 16.6%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+    background-color: #885988;
+
+}
+
+.bitcoin__table table tbody tr {
+    border: 1px solid #574B90;
+}
+
+.bitcoin__table table tbody tr th {
+    width: 16.6%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+}
+
+.bitcoin__table table tbody tr th img {
+    border: 1px solid #222222;
+    width: 80%;
+    height: 50px;
+    object-fit: cover;
+
+}
+
+.bitcoin__table table tbody tr td {
+    text-align: center;
+    padding: 8px;
+}
+
+.bitcoin__table table tbody tr:nth-child(even) td {
+    background-color: rgba(136, 89, 136, 0.6);
+}
+
+.defitvl__table {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.defitvl__table table {
+    width: 60%;
+    margin: 40px;
+    margin-bottom: 10px;
+}
+
+.defitvl__table table caption {
+    margin: 8px;
+}
+
+.defitvl__table table tbody tr {
+    border: 1px solid #574B90;
+}
+
+.defitvl__table table tbody tr th {
+    width: 20%;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px;
+    background-color: #885988;
+}
+
+.defitvl__table table tbody tr th img {
+    border: 1px solid #574B90;
+    width: 80%;
+    height: 50px;
+    object-fit: cover;
+}
+
+.defitvl__table table tbody tr td {
+    text-align: center;
+    padding: 8px;
+}
+
+.defitvl__defillama {
+    display: flex;
+    justify-content: right;
+    width: 60%;
+    margin: 0 auto;
+}
+
+.defitvl__power img {
+    height: 30px;
+}
+
+
+
+/* #about .container h2 {
+    color: #ffd16a;
+} */
+
+.about__gallary {
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: nowrap;
+}
+
+.about__mainbox {
+    width: 30%;
+    object-fit: cover;
+}
+
+.about__subbox {
+    width: 20%;
+    object-fit: cover;
+}
+
+/* COMPRISON部分 */
+
+.comparison__scrollable {
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    -webkit-overflow-scrolling: touch;
+    width: 100%;
+    height: auto;
+    /* height: fit-content; */
+    margin-bottom: 40px;
+}
+
+.comparison__table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    min-width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+.comparison__table tr {
+    border-top: solid 1px #eee;
+    border-bottom: solid 1px #eee;
+    cursor: pointer;
+}
+
+.comparison__table thead tr th,
+.comparison__table tbody tr th {
+    width: 80px;
+    padding: 10px;
+}
+
+.comparison__table td {
+    padding: 10px;
+}
+
+.comparison__table td:hover {
+    background-color: #eee;
+}
+
+td.comparison__chainName01:before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/bitcoin-logo.png);
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    background-color: #eee;
+    /* margin-right: 10px; */
+    margin: 0px auto 10px;
+}
+
+td.comparison__chainName02:before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/eth-logo.png);
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    background-color: #eee;
+    /* margin-right: 10px; */
+    margin: 0px auto 10px;
+}
+
+td.comparison__chainName03:before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/usdt-logo.png);
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    background-color: #eee;
+    /* margin-right: 10px; */
+    margin: 0px auto 10px;
+}
+
+td.comparison__chainName04:before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/bnb-logo.png);
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    background-color: #eee;
+    /* margin-right: 10px; */
+    margin: 0px auto 10px;
+}
+
+td.comparison__chainName05:before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/usdc-logo.png);
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    background-color: #eee;
+    /* margin-right: 10px; */
+    margin: 0px auto 10px;
+}
+
+td.comparison__chainName06:before {
+    content: '';
+    display: block;
+    width: 300px;
+    height: 300px;
+    background-image: url(../img/sol-logo.png);
+    background-repeat: no-repeat;
+    border-radius: 50px;
+    background-color: #eee;
+    /* margin-right: 10px; */
+    margin: 0px auto 10px;
+}
+
+/* comparison tab切り替え用 */
+/*tabの形状*/
+
+
+
+.comparison__tab {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.comparison__tab li a {
+    display: block;
+    background: #ddd;
+    margin: 0 2px;
+    padding: 10px 20px;
+}
+
+/*liにactiveクラスがついた時の形状*/
+.comparison__tab li.active a {
+    background: #fff;
+}
+
+
+/*エリアの表示非表示と形状*/
+.comparison__area {
+    display: none;
+    /*はじめは非表示*/
+    opacity: 0;
+    /*透過0*/
+        background-color: #FFB1BC;
+    padding: 20px 20px;
+}
+
+/*areaにis-activeというクラスがついた時の形状*/
+.comparison__area.is-active {
+    display: block;
+    /*表示*/
+    animation-name: displayAnime;
+    /*ふわっと表示させるためのアニメーション*/
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+}
+
+.comparison__area ul {
+    margin: 12px;
+}
+
+.comparison__area li {
+    border-bottom: 1px solid #3C474E;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+.comparison__slider li {
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+}
+
+@keyframes displayAnime {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+/* COUSE部分 */
+
+#course {
+    display: block;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.course__intro {
+    margin: 60px;
+}
+
+.course__detail01 {
+    display: flex;
+}
+
+.course__detail01 img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.course__text {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    /* flex-wrap: wrap; でやるとうまくいかなかったが下記でflexでの中央ぞろえうまくいった*/
+    flex-direction: column;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+.course__text h3 {
+    margin-bottom: 20px;
+    text-align-last: left;
+}
+
+.course__text p {
+    text-align: left;
+    margin-left: 0;
+    width: 100%;
+}
+
+.course__detail02 {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.course__detail02 img {
+    width: 50%;
+    object-fit: cover;
+}
+
+.course__detail03 {
+    display: flex;
+}
+
+.course__detail03 img {
+    width: 50%;
+    object-fit: cover;
+}
+
+/* NEWS */
+#news {
+    display: block;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.news__content {
+    display: flex;
+    justify-content: space-around;
+}
+
+.news__item {
+    /* width: 300px; */
+    width: 24%;
+}
+
+.news__item img {
+    width: 100%;
+}
+
+.news__text {
+    margin-top: 30px;
+}
+
+.news__pubdate {
+    margin-bottom: 24px;
+}
+
+.news__button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 180px;
+}
+
+.button {
+    background-color: #FFB1BC;
+    color: #574B90;
+    font-size: 18px;
+    width: 300px;
+    height: 60px;
+    text-align: center;
+    line-height: 60px;
+}
+
+.news__item:hover {
+    outline: 1px solid #574B90;
+}
+
+.button:hover {
+    outline: 1px solid #574B90;
+}
+
+/* Access */
+#access {
+    display: block;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.access__map {
+    height: 0;
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+}
+
+.access__map iframe {
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+}
+
+.access_items {
+    margin: 60px auto;
+    /* width: 1000px; */
+    width: 84%;
+    display: flex;
+    justify-content: center;
+}
+
+.access_items table {
+    width: 50%;
+}
+
+.access__cellright {
+    padding: 15px 20px;
+}
+
+/* Contact */
+#contact {
+    display: block;
+    padding-top: 60px;
+    margin-top: -60px;
+}
+
+.contact__form {
+    display: flex;
+    justify-content: center;
+    width: 800px;
+    margin: 0 auto;
+}
+
+.contact__table tbody tr {
+    border: 1.5px solid #bfbfbf;
+    border-left: none;
+    border-right: none;
+}
+
+.contact__table tbody tr th {
+    width: 240px;
+    padding: 8px;
+    border: 1px solid #bfbfbf;
+    border-left: none;
+    vertical-align: top;
+}
+
+.contact__table tbody tr td {
+    width: 400px;
+    border: 1px solid #bfbfbf;
+    border-right: none;
+    font-size: 0.8em;
+}
+
+.motivation {
+    margin-bottom: 16px;
+}
+
+.contact__button {
+    margin: 0 auto;
+    width: 300px;
+    margin-top: 30px;
+    margin-bottom: 140px;
+}
+
+/* Footer */
+.copyrights {
+    width: 100%;
+    height: 100px;
+    background-color: #707070;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+
+/* スマホ用デザイン */
+
+/* スマホ用デザイン　基本的なタグ */
+@media screen and (max-width: 768px) {
+    #header {
+        width: 100vh;
+    }
+
+    .container {
+        width: 100vh;
+        margin: 0 auto;
+    }
+}
+
+/* スマホ用デザイン　CONTACT部分 */
+@media screen and (max-width: 768px) {
+    .contact__form {
+        width: 100vh;
+    }
+
+    .contact__form form {
+        width: 80%;
+    }
+
+    .contact__table {
+        width: 100%;
+    }
+
+    .contact__table tbody tr {
+        border-top: none;
+    }
+
+    .contact__table tbody tr th,
+    .contact__table tbody tr td {
+        width: 100%;
+        display: block;
+        border: none;
+        text-align: center;
+    }
+
+    .contact__table tbody tr td input {
+        width: 60%;
+    }
+
+    .contact__table tbody tr td input.motivation {
+        width: 10%;
+    }
+
+    .contact__table tbody tr td select {
+        width: 80%;
+    }
+}
